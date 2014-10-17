@@ -24,5 +24,5 @@ return penalty;
 }
 
 
-var copSays = isSpeeding(86, true);
+var copSays = isSpeeding(86);
 console.log(copSays);
