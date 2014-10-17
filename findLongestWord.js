@@ -3,6 +3,7 @@
 
 
 function findLongestWord(str){
+    var answer = {};
     var longest = 0;
     var words = str.trim().split(" ");
 
@@ -17,14 +18,15 @@ function findLongestWord(str){
 
     }
 
-
-    return words[longest];
+    answer.word =  words[longest];
+    answer.length = words[longest].length;
+    return answer;
 
 }
 
 
-var sentence = "the quick brown fox jumped over the lazy dog"
+var sentence = "hey hey my my rock and roll will never die"
 
 
 var answer = findLongestWord(sentence);
-console.log(answer);
+console.log(answer.word);
