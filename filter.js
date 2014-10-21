@@ -12,10 +12,10 @@ function isBigEnough(element, max) {
 console.log(filtered)*/
 
 
-console.log(maxVals([2, 4, 6, 8, 10], 5))
+console.log(maxVals([2, 4, 6, "hi", 10], 5));
 
 function maxVals(arr, max){
     return arr.filter(function(val,idx){
-        return (val<=max);
+        return (+val !== val);
     });
 }
