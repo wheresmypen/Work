@@ -1,0 +1,18 @@
+#littleBox{
+    -webkit-transform:rotate(-45deg); /* Safari and Chrome */
+}
+
+.oneShape{
+    /*background-color: yellow;*/
+    -webkit-transform:rotate(-115deg);
+    height: 100px;
+    width: 100px;
+}
+
+.blue{
+    /*background-color: green;*/
+    -webkit-transform:rotate(-15deg);
+    height: 400px;
+    width: 400px;
+}
+
