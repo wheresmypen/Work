@@ -1,4 +1,5 @@
 #littleBox{
+    background-color: blue;
     -webkit-transform:rotate(-45deg); /* Safari and Chrome */
 }
 
