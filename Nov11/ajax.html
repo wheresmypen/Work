@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+        <input id="autocomplete"></input>
+
+        <ul id="result">
+
+        </ul>
+
+
+
+       <script>
+
+
+           foo = thing();
+
+           console.log(foo)
+
+           function thing(){
+
+               var x;
+               x.name = "david";
+
+               if(x.name == "joe"){
+                   x.age = 20;
+                   return x;
+               }
+               if (x.name == "david"){
+               return x;
+               }
+           }
+
+
+
+           $("#autocomplete").keyup(function(e){
+//               $("#autocomplete");
+
+               $.ajax({
+                   url: "http://autocomplete.topratedlocal.com/city/"+$("#autocomplete").val(),
+               }).done(function( data ) {
+//                   if ( console && console.log ) {
+                       var html = "";
+                       data.forEach(function(e){
+                           html+="<li>" + e + "</li>";
+                       });
+                       $("#result").html(html);
+//                   }
+               });
+           })
+
+       </script>
+
+</body>
+</html>
