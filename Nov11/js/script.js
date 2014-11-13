@@ -35,6 +35,8 @@ $(function() {
 //            $('#edit_box').removeClass('closed');
             $('#edit_box').slideDown();
 
+
+
         });
     };
 
@@ -142,6 +144,7 @@ $(function() {
             html += "<td>" + e.address + "</td>";
             html += "<td><button class = 'delete' index ='"+index+"'>Del</button></td>";
             html += "<td><button class = 'edit' index ='"+index+"'>Edit</button></td>";
+            html += "<td><button class = 'location' index ='"+index+"'>Find Location</button></td>";
             html += "</tr>";
 
         })
@@ -157,6 +160,8 @@ $(function() {
 
         $('.edit').click(function(){
             console.log('edit clicked');
+
+            $('#edit_box').slideDown();
 
             render_edit_box("edit", employees[$(this).attr("index")], $(this).attr("index"));
 

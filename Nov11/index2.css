@@ -8,15 +8,6 @@
 
 }
 
-.open{
-
-    border: solid 1px red;
-    margin: 5px;
-    width: 500px;
-    /*display: block;*/
-
-}
-
 .closed div {
     margin: 15px;
 }
