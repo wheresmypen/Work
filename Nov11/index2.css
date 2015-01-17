@@ -17,12 +17,3 @@ table td {
     margin: 5px;
 }
 
-#map-canvas{
-    height: 400px;
-    width: 400px;
-}
-
-#close_map{
-    /*float: right;*/
-}
-
